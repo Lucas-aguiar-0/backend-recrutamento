@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cadastro de Candidato</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="image-container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="image-with-text">
+                    <a href="#" class="image-link">
+                        <img src="./img/Caminhoneiro_cadastrar.jpeg" alt="">
+        
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image-with-text">
+                    <a href="#" class="image-link">
+                        <img src="./img/Atualizar_cadastro.jpeg" alt="">
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image-with-text">
+                    <a href="#" class="image-link">
+                        <img src="./img/Consultar_cadastro.jpeg" alt="">
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="image-with-text">
+                    <a href="#" class="image-link">
+                        <img src="./img/Apagar_cadastro.jpeg" alt="">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2>Cadastro de Candidato</h2>
+        </div>
+        
+        <div class="card-body">
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="nome">Nome do Candidato:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome do candidato" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="Digite o número do CPF" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="numctps">Numero da Carteira Nacional de Habilitação:</label>
+                    <input type="text" class="form-control" id="numctps" placeholder="Digite o numero da numctps" required>
+                </div>
+
+                <div class="full-box">
+                    <button  id="btcadastrar" type="button" class="btn btn-primary">Cadastrar</button>
+                    <button id="btexcluir" type="button" class="btn btn-danger">Excluir</button>
+                    <button id="btcancelar" type="button" class="btn btn-secondary">Cancelar</button>
+                    <button id="btconfirmar" type="button" class="btn btn-info">Confirmar</button>
+
+
+                </div>
+            </form>
+            <br>
+            <div id="mensagem">
+            </div>
+            <div id="tabela">
+        
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./scriptcandidato.js"></script>
+</body>
+</html>

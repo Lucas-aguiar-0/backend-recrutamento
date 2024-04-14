@@ -1,0 +1,73 @@
+body {
+    background-image: url('./img/imagem_fundo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-with-text {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image-with-text img {
+    width: 100%;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.image-with-text:hover img {
+    transform: scale(1.1);
+    opacity: 0.4; 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px; 
+}
+
+.image-with-text:hover .overlay {
+    opacity: 1;
+}
+
+a {
+    display: block;
+}
+
